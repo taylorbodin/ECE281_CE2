@@ -31,14 +31,14 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity inverter is
     Port ( I : in  STD_LOGIC;
-           O : in  STD_LOGIC);
+           O : out  STD_LOGIC);
 end inverter;
 
 architecture Behavioral of inverter is
 
 begin
 
-O <= not O;
+O <= not I;
 
 end Behavioral;
 
